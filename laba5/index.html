@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Task Manager — лабораторна робота 5, Артем Рудик">
+    <meta name="author" content="Артем Рудик">
+    <title>Task Manager — Артем Рудик</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h1>Task Manager</h1>
+            <p class="subtitle">Артем Рудик, група 136</p>
+            <p id="user-info" class="user-info">Завантаження користувача...</p>
+        </header>
+
+        <main class="app-main">
+            <div id="loader" class="loader hidden" aria-live="polite">
+                <span class="spinner" aria-hidden="true"></span>
+                <span>Завантаження...</span>
+            </div>
+
+            <div id="error-message" class="error-message hidden" role="alert"></div>
+
+            <form id="task-form" class="task-form" autocomplete="off">
+                <label class="visually-hidden" for="task-input">Нове завдання</label>
+                <input
+                    type="text"
+                    id="task-input"
+                    class="task-input"
+                    placeholder="Що потрібно зробити?"
+                    maxlength="200"
+                >
+                <button type="submit" id="add-button" class="button button-primary" disabled>
+                    Додати
+                </button>
+            </form>
+
+            <div class="search-row">
+                <label class="visually-hidden" for="search-input">Пошук завдань</label>
+                <input
+                    type="search"
+                    id="search-input"
+                    class="search-input"
+                    placeholder="Пошук завдань..."
+                >
+            </div>
+
+            <nav class="filters" aria-label="Фільтри завдань">
+                <button type="button" class="filter-btn active" data-filter="all">Всі</button>
+                <button type="button" class="filter-btn" data-filter="active">Активні</button>
+                <button type="button" class="filter-btn" data-filter="completed">Виконані</button>
+            </nav>
+
+            <p id="task-counter" class="task-counter">Активних завдань: 0</p>
+
+            <ul id="task-list" class="task-list" aria-label="Список завдань"></ul>
+
+            <p id="empty-state" class="empty-state hidden">Завдань не знайдено</p>
+        </main>
+
+        <footer class="app-footer">
+            <p>
+                <a href="https://github.com/aarudyk/Web_labs/tree/lab-05" target="_blank">github.com/aarudyk/Web_labs</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
