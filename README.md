@@ -13,6 +13,7 @@
 | 2 | [`lab-02`](https://github.com/aarudyk/Web_labs/tree/lab-02) | CSS-стилізація (селектори, box model, позиціонування) |
 | 3 | [`lab-03`](https://github.com/aarudyk/Web_labs/tree/lab-03) | Адаптивна верстка (Grid, Flexbox, media queries, анімації) |
 | 4 | [`lab-04`](https://github.com/aarudyk/Web_labs/tree/lab-04) | JavaScript (змінні, функції, масиви, об'єкти, рядки) |
+| 5 | [`lab-05`](https://github.com/aarudyk/Web_labs/tree/lab-05) | DOM, події, Fetch API (Task Manager / Todo App) |
 
 ## Структура
 
@@ -21,4 +22,5 @@ laba1/   — лабораторна робота 1 (HTML)
 laba2/   — лабораторна робота 2 (CSS)
 laba3/   — лабораторна робота 3 (адаптивна верстка)
 laba4/   — лабораторна робота 4 (JavaScript)
+laba5/   — лабораторна робота 5 (Todo App)
 ```
