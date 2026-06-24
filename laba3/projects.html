@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Проєкти та роботи портфоліо Артема Рудика">
+    <meta name="author" content="Артем Рудик">
+    <title>Проєкти — Портфоліо</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header class="page-header">
+            <h1>Артем Рудик</h1>
+            <p class="tagline">Студент групи 136 — майбутній фронтенд-розробник</p>
+            <nav class="nav" aria-label="Головна навігація">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger" aria-label="Відкрити меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Головна</a></li>
+                    <li><a class="nav-link" href="about.html">Про мене</a></li>
+                    <li class="active"><a class="nav-link" href="projects.html">Проєкти</a></li>
+                    <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="page-sidebar">
+            <h3>Фільтр</h3>
+            <ul class="sidebar-nav">
+                <li><a href="#lab1">Лабораторна 1</a></li>
+                <li><a href="#lab2">Лабораторна 2</a></li>
+                <li><a href="#lab3">Лабораторна 3</a></li>
+            </ul>
+            <p>Сітка карток автоматично підлаштовується під ширину екрана завдяки <code>auto-fit</code> та <code>minmax()</code>.</p>
+        </aside>
+
+        <main class="page-content">
+            <section class="content-section">
+                <h2>Мої проєкти</h2>
+                <p>Колекція лабораторних робіт з веб-розробки. Картки перебудовуються без додаткових медіа-запитів.</p>
+
+                <div class="projects-grid">
+                    <article class="card project-card" id="lab1">
+                        <img src="images/coding.svg" alt="HTML-портфоліо — лабораторна 1">
+                        <h3>HTML-портфоліо</h3>
+                        <p>Багатосторінковий сайт на чистому HTML5: семантика, форми, таблиці, мультимедіа.</p>
+                        <ul class="project-tags">
+                            <li>HTML5</li>
+                            <li>Git</li>
+                            <li>lab-01</li>
+                        </ul>
+                    </article>
+
+                    <article class="card project-card" id="lab2">
+                        <img src="images/coding.svg" alt="CSS-стилізація — лабораторна 2">
+                        <h3>CSS-стилізація</h3>
+                        <p>Повна стилізація портфоліо: селектори, box model, позиціонування, типографіка.</p>
+                        <ul class="project-tags">
+                            <li>CSS3</li>
+                            <li>Flexbox</li>
+                            <li>lab-02</li>
+                        </ul>
+                    </article>
+
+                    <article class="card project-card" id="lab3">
+                        <img src="images/avatar.svg" alt="Адаптивна верстка — лабораторна 3">
+                        <h3>Адаптивна верстка</h3>
+                        <p>Mobile First, CSS Grid, гамбургер-меню, анімації та CSS-змінні для теми оформлення.</p>
+                        <ul class="project-tags">
+                            <li>Grid</li>
+                            <li>Media Queries</li>
+                            <li>lab-03</li>
+                        </ul>
+                    </article>
+
+                    <article class="card project-card">
+                        <img src="images/coding.svg" alt="Планується JavaScript">
+                        <h3>JavaScript (планується)</h3>
+                        <p>Наступний етап — інтерактивність, валідація форм та динамічний контент.</p>
+                        <ul class="project-tags">
+                            <li>JS</li>
+                            <li>Майбутнє</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 Артем Рудик. Всі права захищені.</p>
+            <p>
+                <a href="index.html">Головна</a> |
+                <a href="about.html">Про мене</a> |
+                <a href="contacts.html">Контакти</a>
+            </p>
+        </footer>
+    </div>
+
+    <a href="#top" id="back-to-top" class="button">Нагору</a>
+</body>
+</html>

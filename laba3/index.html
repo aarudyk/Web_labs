@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Персональне портфоліо Артема Рудика — майбутнього фронтенд-розробника">
+    <meta name="author" content="Артем Рудик">
+    <title>Головна — Портфоліо</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header class="page-header">
+            <h1>Артем Рудик</h1>
+            <p class="tagline">Студент групи 136 — майбутній фронтенд-розробник</p>
+            <nav class="nav" aria-label="Головна навігація">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger" aria-label="Відкрити меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-list">
+                    <li class="active"><a class="nav-link" href="index.html">Головна</a></li>
+                    <li><a class="nav-link" href="about.html">Про мене</a></li>
+                    <li><a class="nav-link" href="projects.html">Проєкти</a></li>
+                    <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="page-sidebar">
+            <h3>Швидкі посилання</h3>
+            <ul class="sidebar-nav">
+                <li><a href="about.html">Мої навички</a></li>
+                <li><a href="projects.html">Портфоліо</a></li>
+                <li><a href="contacts.html">Написати мені</a></li>
+            </ul>
+            <h3>Про студента</h3>
+            <p>Група <strong>136</strong>, факультет комп'ютерних наук. Вивчаю веб-розробку та створюю адаптивні інтерфейси.</p>
+        </aside>
+
+        <main class="page-content">
+            <section class="content-section intro-card">
+                <h2>Вітаю на моєму портфоліо!</h2>
+                <p>
+                    Привіт! Мене звати <strong>Артем Рудик</strong>, і я навчаюся на спеціальності
+                    <em>комп'ютерних наук</em>, група <strong>136</strong>. Моя мета — стати професійним фронтенд-розробником.
+                </p>
+                <p>
+                    Цей сайт повністю адаптивний: коректно відображається від 320px до 1920px
+                    завдяки CSS Grid, Flexbox та медіа-запитам.
+                </p>
+
+                <blockquote cite="https://developer.mozilla.org/">
+                    <p>Код — це поезія логіки.</p>
+                    <footer>— Невідомий розробник</footer>
+                </blockquote>
+
+                <h3>Мої ключові цілі</h3>
+                <ol>
+                    <li>Опанувати HTML, CSS та JavaScript</li>
+                    <li>Вивчити сучасний фреймворк (React або Vue)</li>
+                    <li>Створити власний open-source проєкт</li>
+                </ol>
+
+                <div class="scroll-box">
+                    <p>
+                        Адаптивна верстка дозволяє одному сайту зручно працювати на телефоні,
+                        планшеті та десктопі. Mobile First означає, що базові стилі пишуться
+                        для мобільних пристроїв, а потім розширюються для ширших екранів.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Про цей сайт</h2>
+                <div class="two-col-section">
+                    <article class="card profile-card">
+                        <span class="badge">Група 136</span>
+                        <figure>
+                            <img src="images/avatar.svg" alt="Аватар Артема Рудика" width="300" height="300">
+                            <figcaption>Моє фото-профіль для портфоліо</figcaption>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="images/coding.svg" alt="Робоче місце з кодом HTML на екрані" width="400" height="250">
+                            <figcaption>Моє робоче місце під час навчання веб-розробці</figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Відео-презентація</h2>
+                <figure class="card">
+                    <video controls width="640">
+                        <source src="video/intro.mp4" type="video/mp4">
+                        Ваш браузер не підтримує відео.
+                    </video>
+                    <figcaption>Коротке відео-знайомство з моїм портфоліо</figcaption>
+                </figure>
+            </section>
+
+            <section class="content-section">
+                <h2>Останні проєкти</h2>
+                <p>Переглянути всі роботи можна на сторінці <a href="projects.html">Проєкти</a>.</p>
+                <div class="projects-grid">
+                    <article class="card project-card">
+                        <img src="images/coding.svg" alt="Скріншот HTML-портфоліо">
+                        <h3>HTML-портфоліо</h3>
+                        <p>Багатосторінковий сайт на чистому HTML5 з семантичною розміткою.</p>
+                        <ul class="project-tags">
+                            <li>HTML5</li>
+                            <li>Git</li>
+                        </ul>
+                    </article>
+                    <article class="card project-card">
+                        <img src="images/coding.svg" alt="Скріншот CSS-стилізації">
+                        <h3>CSS-стилізація</h3>
+                        <p>Повна стилізація портфоліо: селектори, box model, позиціонування.</p>
+                        <ul class="project-tags">
+                            <li>CSS3</li>
+                            <li>Flexbox</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 Артем Рудик. Всі права захищені.</p>
+            <p>
+                <a href="about.html">Про мене</a> |
+                <a href="projects.html">Проєкти</a> |
+                <a href="contacts.html">Контакти</a>
+            </p>
+        </footer>
+    </div>
+
+    <a href="#top" id="back-to-top" class="button">Нагору</a>
+</body>
+</html>
