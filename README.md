@@ -15,7 +15,7 @@
 - HTML5 (семантична розмітка)
 - Git
 
-## Структура проєкту
+**Репозиторій:** [github.com/aarudyk/labs_Web](https://github.com/aarudyk/labs_Web)
 
 ```
 ├── .gitignore
