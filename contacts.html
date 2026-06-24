@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Контактна інформація Артема Тарана">
+    <meta name="description" content="Контактна інформація та форма зворотного зв'язку Артема Тарана">
     <meta name="author" content="Артем Таран">
     <title>Контакти — Портфоліо</title>
 </head>
 <body>
     <header>
         <h1>Артем Таран</h1>
+        <p>Майбутній фронтенд-розробник</p>
         <nav>
             <ul>
                 <li><a href="index.html">Головна</a></li>
@@ -18,15 +19,96 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section>
             <h2>Зв'яжіться зі мною</h2>
-            <p>Email: <a href="mailto:artem.taran@example.com">artem.taran@example.com</a></p>
-            <p>Телефон: <a href="tel:+380501234567">+38 (050) 123-45-67</a></p>
+            <p>
+                Я завжди відкритий до співпраці, питань та пропозицій. Оберіть зручний
+                для вас спосіб зв'язку або заповніть форму нижче.
+            </p>
+
+            <article>
+                <h3>Контактні дані</h3>
+                <ul>
+                    <li>
+                        Email:
+                        <a href="mailto:artem.taran@example.com">artem.taran@example.com</a>
+                    </li>
+                    <li>
+                        Телефон:
+                        <a href="tel:+380501234567">+38 (050) 123-45-67</a>
+                    </li>
+                    <li>
+                        GitHub:
+                        <a href="https://github.com/" target="_blank">github.com/artem-taran</a>
+                    </li>
+                </ul>
+            </article>
         </section>
+
+        <section>
+            <h2>Форма зворотного зв'язку</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Контактна інформація</legend>
+
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Повідомлення</legend>
+
+                    <label for="subject">Тема:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Оберіть тему --</option>
+                        <option value="general">Загальне питання</option>
+                        <option value="cooperation">Співпраця</option>
+                        <option value="feedback">Відгук</option>
+                    </select>
+
+                    <p>Тип звернення:</p>
+                    <label>
+                        <input type="radio" name="type" value="question" required> Питання
+                    </label>
+                    <label>
+                        <input type="radio" name="type" value="suggestion"> Пропозиція
+                    </label>
+                    <label>
+                        <input type="radio" name="type" value="complaint"> Скарга
+                    </label>
+
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
+                </fieldset>
+
+                <label>
+                    <input type="checkbox" name="consent" required>
+                    Я погоджуюсь на обробку персональних даних
+                </label>
+
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+
+        <aside>
+            <h3>Час відповіді</h3>
+            <p>
+                Я намагаюся відповідати на повідомлення протягом 24–48 годин у робочі дні.
+            </p>
+        </aside>
     </main>
+
     <footer>
         <p>&copy; 2026 Артем Таран. Всі права захищені.</p>
+        <p>
+            <a href="index.html">Головна</a> |
+            <a href="about.html">Про мене</a>
+        </p>
     </footer>
 </body>
 </html>
